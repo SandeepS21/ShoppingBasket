@@ -58,7 +58,7 @@ public class ShoppingManagerImpl implements ShoppingManager {
 
 		final Map<Item, Integer> items = basket.getItems();
 		Integer quantity = 0;
-		Item item = new Item(itemName, 0.0);
+		final Item item = new Item(itemName, 0.0);
 		if (items.containsKey(item)) {
 			quantity = items.get(item);
 		} else {
